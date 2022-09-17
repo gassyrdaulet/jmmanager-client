@@ -5,7 +5,7 @@ export default class Auth{
     static ip = 'jackmarket.kz'
 
     static async payOff(sum, user, comment) {
-      const {data} = await axios.post(('http://'+(Auth.isTestingOnPhone?Auth.ip:'localhost')+':5000/api/auth/payoff'),
+      const {data} = await axios.post(('https://'+(Auth.isTestingOnPhone?Auth.ip:'localhost')+':5000/api/auth/payoff'),
         {
           sum, user, comment
         }, 
@@ -19,7 +19,7 @@ export default class Auth{
     }
 
     static async getAllUsers() {
-      const {data} = await axios.get(('http://'+(Auth.isTestingOnPhone?Auth.ip:'localhost')+':5000/api/auth/users/all'),
+      const {data} = await axios.get(('https://'+(Auth.isTestingOnPhone?Auth.ip:'localhost')+':5000/api/auth/users/all'),
       {
         headers:{
           authorization: "Bearer " + localStorage.getItem('token')
@@ -29,7 +29,7 @@ export default class Auth{
     }
 
     static async getTransactions(user, firstDate, secondDate){
-      const data = await axios.get(('http://'+(Auth.isTestingOnPhone?Auth.ip:'localhost')+':5000/api/auth/transactions'), 
+      const data = await axios.get(('https://'+(Auth.isTestingOnPhone?Auth.ip:'localhost')+':5000/api/auth/transactions'), 
         {
           headers:{
             authorization: "Bearer " + localStorage.getItem('token')
@@ -44,7 +44,7 @@ export default class Auth{
     }
 
     static async getUsers(searchValue){
-      const {data} = await axios.get('http://' + (Auth.isTestingOnPhone?Auth.ip:'localhost') + ':5000/api/auth/users',
+      const {data} = await axios.get('https://' + (Auth.isTestingOnPhone?Auth.ip:'localhost') + ':5000/api/auth/users',
       {
           headers:{
               authorization: "Bearer " + localStorage.getItem('token')
@@ -58,7 +58,7 @@ export default class Auth{
 
     static async getBalance( id ) {
       try{
-        const {data} = await axios.get((Auth.isTestingOnPhone? 'http://'+Auth.ip+':5000/api/auth/balance/':'http://localhost:5000/api/auth/balance/') + id, {
+        const {data} = await axios.get((Auth.isTestingOnPhone? 'https://'+Auth.ip+':5000/api/auth/balance/':'https://localhost:5000/api/auth/balance/') + id, {
           headers: {
             authorization: 'Bearer ' + localStorage.getItem('token')
           }
@@ -76,7 +76,7 @@ export default class Auth{
       const yesterDay = ((new Date(Date.now() + 6*60*60*1000)).toISOString().substring(0,10))
 
       try{
-          const data = await axios.post(Auth.isTestingOnPhone? 'http://'+Auth.ip+':5000/api/auth/login':'http://localhost:5000/api/auth/login', {
+          const data = await axios.post(Auth.isTestingOnPhone? 'https://'+Auth.ip+':5000/api/auth/login':'https://localhost:5000/api/auth/login', {
           email,
           password
         })

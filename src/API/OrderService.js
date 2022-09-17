@@ -14,7 +14,7 @@ export default class OrderService{
 
         static async searchOrder(telephoneNumber, id, status){
             let filteredResult = []
-            const {data} = await axios.get('http://' + (Auth.isTestingOnPhone?Auth.ip:'localhost') + ':5000/api/orders/search', 
+            const {data} = await axios.get('https://' + (Auth.isTestingOnPhone?Auth.ip:'localhost') + ':5000/api/orders/search', 
             {
                 params:{
                     telephoneNumber, id, status
@@ -34,7 +34,7 @@ export default class OrderService{
         }
 
         static async newOrder(body, orderStatus){
-            const data = await axios.post('http://' + (Auth.isTestingOnPhone?Auth.ip:'localhost') + ':5000/api/orders/create', body, 
+            const data = await axios.post('https://' + (Auth.isTestingOnPhone?Auth.ip:'localhost') + ':5000/api/orders/create', body, 
             {
                 headers: {
                     authorization: 'Bearer ' + localStorage.getItem('token'),
@@ -45,7 +45,7 @@ export default class OrderService{
         }
 
         static async editOrder(id, body){
-            const data = await axios.patch('http://' + (Auth.isTestingOnPhone?Auth.ip:'localhost') + ':5000/api/orders/edit/' + id, body, 
+            const data = await axios.patch('https://' + (Auth.isTestingOnPhone?Auth.ip:'localhost') + ':5000/api/orders/edit/' + id, body, 
             {
                 headers: {
                     authorization: 'Bearer ' + localStorage.getItem('token'),
@@ -56,7 +56,7 @@ export default class OrderService{
 
 
         static async finishOrder(id, data) {
-            await axios.patch('http://' + (Auth.isTestingOnPhone?Auth.ip:'localhost') + ':5000/api/orders/finish/' + id , 
+            await axios.patch('https://' + (Auth.isTestingOnPhone?Auth.ip:'localhost') + ':5000/api/orders/finish/' + id , 
             {},
                 {
                 params: {
@@ -73,7 +73,7 @@ export default class OrderService{
         }
 
         static async acceptOrder(id,deliveryInfo) {
-            await axios.patch('http://' + (Auth.isTestingOnPhone?Auth.ip:'localhost') + ':5000/api/orders/accept/' + id ,
+            await axios.patch('https://' + (Auth.isTestingOnPhone?Auth.ip:'localhost') + ':5000/api/orders/accept/' + id ,
                 deliveryInfo,
                 {
                 headers:
@@ -85,7 +85,7 @@ export default class OrderService{
         }
 
         static async getOrderInfo(id) {
-            const {data} = await axios.get('http://' + (Auth.isTestingOnPhone?Auth.ip:'localhost') + ':5000/api/orders/details/' + id , {
+            const {data} = await axios.get('https://' + (Auth.isTestingOnPhone?Auth.ip:'localhost') + ':5000/api/orders/details/' + id , {
                 headers: {
                     authorization: 'Bearer ' + localStorage.getItem('token')
                 }
@@ -103,7 +103,7 @@ export default class OrderService{
         }
 
         static async getOrderInfoForEdit(id, type='edit') {
-            const {data} = await axios.get('http://' + (Auth.isTestingOnPhone?Auth.ip:'localhost') + ':5000/api/orders/details/' + id , {
+            const {data} = await axios.get('https://' + (Auth.isTestingOnPhone?Auth.ip:'localhost') + ':5000/api/orders/details/' + id , {
                 headers: {
                     authorization: 'Bearer ' + localStorage.getItem('token')
                 }
@@ -133,7 +133,7 @@ export default class OrderService{
 
         static async getFinishedOrders(firstDate, secondDate) {
             const filteredResult = []
-            const {data} = await axios.post(('http://' + (Auth.isTestingOnPhone?Auth.ip:'localhost') + ':5000/api/orders/finished'),
+            const {data} = await axios.post(('https://' + (Auth.isTestingOnPhone?Auth.ip:'localhost') + ':5000/api/orders/finished'),
             {
                     firstDate,
                     secondDate
@@ -151,7 +151,7 @@ export default class OrderService{
 
         static async getPickupOrders() {
             const filteredResult = []
-                const {data} = await axios.get('http://' + (Auth.isTestingOnPhone?Auth.ip:'localhost') + ':5000/api/orders/', 
+                const {data} = await axios.get('https://' + (Auth.isTestingOnPhone?Auth.ip:'localhost') + ':5000/api/orders/', 
                 {
                     headers: {
                         authorization: "Bearer " + localStorage.getItem('token')
@@ -173,7 +173,7 @@ export default class OrderService{
 
         static async getDeliveryOrders() {
             const filteredResult = []
-            const {data} = await axios.get('http://' + (Auth.isTestingOnPhone?Auth.ip:'localhost') + ':5000/api/orders/', 
+            const {data} = await axios.get('https://' + (Auth.isTestingOnPhone?Auth.ip:'localhost') + ':5000/api/orders/', 
             {   
                 headers: {
                     authorization: "Bearer " + localStorage.getItem('token')
@@ -195,7 +195,7 @@ export default class OrderService{
 
         static async getNewOrders() {
             const filteredResult = []
-            const {data} = await axios.get('http://' + (Auth.isTestingOnPhone?Auth.ip:'localhost') + ':5000/api/orders/', 
+            const {data} = await axios.get('https://' + (Auth.isTestingOnPhone?Auth.ip:'localhost') + ':5000/api/orders/', 
             {   
                 headers: {
                     authorization: "Bearer " + localStorage.getItem('token')
