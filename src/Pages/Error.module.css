@@ -1,0 +1,14 @@
+.Error{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 100%;
+}
+.Link{
+    color: dodgerblue;
+}
+.Link:visited{
+    color: dodgerblue;
+}

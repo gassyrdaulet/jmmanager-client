@@ -1,0 +1,214 @@
+.ProfilePage{
+    margin: 30px auto 0;
+    width: 99%;
+    max-width: 1000px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+.Title{
+    width: 100%;
+    text-align: center;
+    /* border-bottom: 1px solid lightgray; */
+}
+.Title2{
+    border-top: 1px solid lightgray;
+    width: 100%;
+    text-align: center;
+    font-weight: normal;
+    font-size: 22px;
+}
+.LoadingWrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ProfileInfo{
+    padding: 2% 5%;
+}
+.Transactions{
+    width: 98%;
+    max-width: 550px;
+    overflow: auto;
+    margin: 0 auto;
+}
+.Table{
+    border-spacing: 0;
+    min-width: 400px;
+}
+.Table td{
+    border: 1px solid lightgray;
+    text-align: center;
+    padding: 5px;
+}
+.Table th{
+    font-size: 10px;
+    color: gray
+}
+.Table th:nth-child(1){
+    min-width: 40px;
+}
+.Table th:nth-child(2){
+    min-width: 100px;
+}
+.Table th:nth-child(3){
+    min-width: 50px;
+}
+.Table th:nth-child(4){
+    min-width: 80px;
+}
+.Table th:nth-child(5){
+    min-width: 80px;
+}
+.Table th:nth-child(6){
+    min-width: 80px;
+}
+.Avatar{
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    margin: 15px 0 5px;
+    width: 200px;
+    height: 200px;
+    background: gray;
+    border: 1px solid gray;
+    position: relative;
+    z-index: 1;
+}
+.AvatarPlaceholder{
+    position: absolute;
+    background: gray;
+    width: 190px;
+    height: 190px;
+    z-index: 2;
+    border-radius: 5px;
+}
+.Avatar img{
+    position: relative;
+    width: 190px;
+    height: 190px;
+    z-index: 10;
+    border-radius: 5px;
+}
+.AdminAvatar{
+    box-shadow: 0 0 2px gray;
+    display: grid;
+    place-items: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    border-radius: 5px;
+}
+.AdminAvatar1{
+    box-shadow: 0 0 5px gray;
+    display: grid;
+    place-items: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    border-radius: 5px;
+}
+.AdminAvatar1::before{
+    content: "";
+    position: absolute;
+    height: 150%;
+    width: 150%;
+    background:  conic-gradient(
+        #fd004c,
+        #fe9000,
+        #fff020,
+        #3edf4b,
+        #3363ff,
+        #b102b7,
+        #fd004c
+    );
+    left: -25%;
+    top: -25%;
+    animation: spin 1.5s infinite linear;
+    z-index: 2;
+}
+.AdminAvatar::before{
+    content: "";
+    position: absolute;
+    height: 150%;
+    width: 150%;
+    background:  conic-gradient(
+        #fe9000,
+        #fff020,
+        #fe9000,
+        #fff020,
+        #fe9000
+    );
+    left: -25%;
+    top: -25%;
+    animation: spin 1.5s infinite linear;
+    z-index: 1;
+}
+@keyframes spin {
+    100%{
+        transform: rotate(-360deg)
+    }
+}
+.AdminAvatar::after{
+    content: '';
+    position: absolute;
+}
+.Select{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+}
+.Start{
+    align-items: flex-start;
+}
+.Hor{
+    display: flex;
+    flex-direction: row;
+}
+.HorResizable{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.HorResizable > * {
+    margin: 10px 15px;
+}
+.HorNoMargin{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.AdminTools{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: rgb(240, 244, 251);
+}
+.Center{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.FixedHeight{
+    height: 70px;
+}
+
+@media only screen and (max-width: 600px){
+    .HorResizable{
+        flex-direction: column;
+        align-items: center;
+    }
+    .Select{
+        align-items: center;
+    }
+}

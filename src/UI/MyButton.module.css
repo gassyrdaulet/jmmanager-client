@@ -1,0 +1,101 @@
+.MyButton{
+    margin: 5px 2px;  
+    font-weight: bold;
+    background: dodgerblue;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 2px;
+    font-size: 13px;
+    cursor: pointer;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+.MyButtonBlue{
+    margin: 5px 2px;  
+    font-weight: bold;
+    background: #0b82cc;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 2px;
+    font-size: 13px;
+    cursor: pointer;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+.MyButtonBlue:active{
+    background: #234f6b;
+}
+.MyButtonBlue:disabled{
+    background: #aeb9c0;
+    cursor: default;
+}
+.MyButtonGray{
+    margin: 5px 2px;  
+    font-weight: bold;
+    background: #677177;
+    user-select: none;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 2px;
+    font-size: 13px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+.MyButtonGray:active{
+    background: #3b4144;
+}
+.MyButtonGreen{
+    margin: 5px 2px;  
+    font-weight: bold;
+    background: #1b9f00;
+    user-select: none;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 2px;
+    font-size: 13px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+.MyButtonGreen:active{
+    background: #266f02;
+}
+.MyButtonGreen:disabled{
+    color: lightgray;
+    background: #677177;
+}
+.MyButtonRed{
+    margin: 5px 2px;  
+    font-weight: bold;
+    background: #e9490a;
+    user-select: none;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 2px;
+    font-size: 13px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+.MyButtonRed:active{
+    background: #a83406;
+}
+.MyButtonRed:disabled{
+    color: lightgray;
+    background: #677177;
+}
+.MyButton:active{
+    background: #9db4c2;
+}
+.MyButton:disabled{
+    background: #677177;
+    color: lightgray;
+}

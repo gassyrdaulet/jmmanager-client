@@ -1,0 +1,55 @@
+.CounterInput{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.CounterInput input{
+    margin: 0 5px;
+    width: 40px;
+    border-radius: 2px;
+    border: 1px solid #a0a0a0;
+    padding: 3px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+}
+.CounterInput input:hover{
+    border: 1px solid #2b75ff;
+}
+.CounterInput input:focus{
+    border: 1px solid #2b75ff;
+    outline: none;
+}
+.CounterInput input::placeholder{
+    font-size: 12px;
+}
+.Up , .Down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 30px;
+    height: 25px;
+    margin: 2px 0;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+    transition: 0.1s;
+    
+}
+.Up img , .Down img {
+    width: 30px;
+    height: 25px;
+    user-select: none;
+    pointer-events: none;
+}
+.Down img{
+    rotate: 180deg;
+}
+.Up:active{
+    transform: scale(1.1);
+}
+.Down:active {
+    transform: scale(1.1);
+}

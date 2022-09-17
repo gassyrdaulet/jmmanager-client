@@ -1,0 +1,70 @@
+.RedButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 6px;
+    box-shadow: 0 0 3px grey;
+    background: red;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    vertical-align: center;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+.LightSkyButton{
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 6px;
+    box-shadow: 0 0 3px grey;
+    background: rgb(29, 164, 209);
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+.GreenButton{
+    display: flex;
+    user-select: none;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 6px;
+    box-shadow: 0 0 3px grey;
+    background: rgb(0, 203, 37);
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+.RedButton:hover{
+    background: rgb(134, 12, 12);
+}
+.RedButton:active{
+    background: rgb(134, 12, 12);
+}
+.LightSkyButton:hover{
+    background: rgb(18, 106, 135);
+}
+.LightSkyButton:active{
+    background: rgb(18, 106, 135);
+}
+.GreenButton:hover{
+    background: rgb(18, 120, 55);
+}
+.GreenButton:active{
+    background: rgb(18, 120, 55);
+}

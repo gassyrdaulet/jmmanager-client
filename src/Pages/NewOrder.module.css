@@ -1,0 +1,20 @@
+.NewOrder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Title{
+    margin-top: 30px;
+    width: 99%;
+    text-align: center;
+    max-width: 1000px;
+    background-color: white;
+    padding: 10px 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid rgba(197, 197, 197, 99);
+    /* border-bottom: none; */
+    font-size: 25px;
+    user-select: none;    
+}

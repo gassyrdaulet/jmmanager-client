@@ -1,0 +1,11 @@
+.Reference{
+    text-decoration: none;
+    color: dodgerblue;
+    outline: 0;
+}
+.Reference:visited{
+    color: dodgerblue;
+}
+.Reference:hover{
+    text-decoration: underline;
+}

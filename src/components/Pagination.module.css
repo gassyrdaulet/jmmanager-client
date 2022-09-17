@@ -1,0 +1,72 @@
+.PaginationMain{
+    margin-top: 10px;
+}
+
+.Pagination{
+    display: flex;
+    flex-direction: row;
+}
+.Pages{
+    width: 35px;
+    height: 35px;
+    border: 2px solid teal;
+    border-radius: 12px;
+}
+.current{
+    box-shadow: 0 0 3px black;
+}
+.arrows{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-width: 300px;
+    max-width: 600px;
+    justify-content: center;
+    margin: 15px auto;
+}
+.arrowsLeft{
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 8px;
+}
+.arrowsCenter{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+.arrowsCenter p{
+    user-select: none;
+}
+.arrowsRight{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 8px;
+}
+.arrows button{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.arrows button img{
+    width: 20px;
+    height: 20px;
+    user-select: none;
+}
+.arrows button div{
+    color: black;
+    vertical-align: center;
+}
+.arrowsLeft button img{
+    rotate: 180deg;
+}
+.prev img{
+    rotate: 180deg;
+}

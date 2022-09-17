@@ -1,0 +1,62 @@
+.GoodWrapper{
+    background: white;
+    border-radius: 10px;
+    width: 99%;
+    margin: 30px auto;
+    user-select: none;
+    min-height: 80vh;
+    border: 1px solid lightgray;
+}
+.Center{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.SpaceBetween{
+    justify-content: space-between;
+}
+.JustifyCenter{
+    justify-content: center;
+}
+.WithLine{
+    border-top: 1px solid lightgray;
+}
+.WithBottomLine{
+    border-bottom: 1px solid lightgray;
+}
+.MarginTop40{
+    margin-top: 40px;
+}
+.Table{
+    width: 90%;
+    max-width: 800px;
+    margin: 10px auto;
+    border-spacing: 0;
+}
+.Table td,th{
+    border: 1px solid lightgray;
+    text-align: center;
+}
+.Table th:nth-child(1){
+    min-width: 80px;
+    width: 100px;
+    max-width: 200px;
+}
+.Table th:nth-child(2){
+    min-width: 80px;
+    width: 100px;
+    max-width: 200px;
+}
+.Table th:nth-child(3){
+    min-width: 80px;
+    width: 100px;
+    max-width: 200px;
+}
+.Buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

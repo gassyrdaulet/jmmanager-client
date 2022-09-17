@@ -1,0 +1,271 @@
+.CreateOrderForm{
+    width: 99%;
+    max-width: 1000px;
+    background-color: white;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid rgba(197, 197, 197, 99);
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.GoodsWrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.Goods{
+    overflow-x: auto;
+    width: 97%;
+}
+.GoodsSlide{
+    max-width: 500px;
+    margin: 0 auto;
+}
+.PaymentSlide{
+    max-width: 330px;
+    margin: 0 auto;
+}
+.PaymentTitles{
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0;
+}
+.PaymentTitles p{
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    font-size: 12px;
+}
+.PaymentTitles p:nth-child(1){
+    min-width: 30px;
+    width: 30px
+}
+.PaymentTitles p:nth-child(2){
+    min-width: 115px;
+    width: 115px;
+}
+.PaymentTitles p:nth-child(3){
+    min-width: 95px;
+    width: 95px;
+}
+.PaymentTitles p:nth-child(4){
+    min-width: 50px;
+    width: 50px;
+}
+.PaymentTitles p:nth-child(5){
+    min-width: 40px;
+    width: 40px
+}
+.Sum{
+    font-size: 25px;
+    user-select: none;
+    width: 770px;
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+.Btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: lightskyblue;
+    border-radius: 10px;
+    margin: 50px 0 10px;
+    height: 45px;
+    width: 500px;
+    transition: 0.1s;
+}
+.Btns:active{
+    transform: scale(0.9);
+}
+.Btns p{
+    user-select: none;
+    font-weight: bold;
+}
+.Btns img{
+    user-select: none;
+    margin: 7px 0 0 9px;
+    width: 30px;
+    height: 30px;
+    rotate: 45deg;
+    pointer-events: none;
+}
+.FormItem{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+.FormItem input{
+    min-width: 150px;
+    position: relative;
+    z-index: 1;
+}
+.Comment textarea{
+    min-width: 191px;
+    width: 191px;
+    height: 160px;
+}
+.FormItem p{
+    display: flex;
+    align-items: center;
+    font-weight: light;
+    width: 100px;
+    min-width: 100px;
+    margin: 0 5px;
+    overflow: hidden;
+    user-select: none;
+}
+.Title{
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    /* border-bottom: 1px solid gray; */
+}
+.Title h2{
+    margin-right: 20px;
+    font-weight: normal;
+}
+.Title p{
+    max-width: 400px;
+    overflow: hidden;
+    height: 20px;
+    white-space: nowrap;
+}
+.Titles{
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0;
+}
+.Titles p{
+    user-select: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    font-size: 12px;
+}
+.Titles p:nth-child(1){
+    min-width: 30px;
+    width: 30px
+}
+.Titles p:nth-child(2){
+    min-width: 130px;
+    width: 130px;
+}
+.Titles p:nth-child(3){
+    min-width: 100px;
+    width: 100px;
+}
+.Titles p:nth-child(4){
+    min-width: 60px;;
+    width: 60px
+}
+.Titles p:nth-child(5){
+    min-width: 60px;;
+    width: 60px
+}
+.Titles p:nth-child(6){
+    min-width: 75px;;
+    width: 75px
+}
+.Titles p:nth-child(7){
+    min-width: 40px;;
+    width: 40px
+}
+.RedText{
+    color: red;
+}
+.PaymentSum{
+    font-size: 25px;
+    user-select: none;
+    width: 490px;
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+.PaymentBtns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: lightskyblue;
+    border-radius: 10px;
+    margin: 60px 0 10px;
+    height: 45px;
+    width: 330px;
+    transition: 0.1s;
+}
+.PaymentBtns:active{
+    transform: scale(0.9);
+}
+.PaymentBtns p{
+    user-select: none;
+    font-weight: bold;
+}
+.PaymentBtns img{
+    user-select: none;
+    pointer-events: none;
+    margin: 7px 0 0 9px;
+    width: 30px;
+    height: 30px;
+    rotate: 45deg;
+}
+.Commit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Commit button{
+    font-size: 20px;
+}
+.Commit p{
+    font-size: large;
+    font-weight: medium;
+    text-align: center;
+}
+.Error{
+    color: red;
+}
+.DeliveryInfo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.LoadingWrapper{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(12, 12, 12, 0.682);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+.Loading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 15px;
+}

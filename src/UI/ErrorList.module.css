@@ -1,0 +1,78 @@
+.ErrorListWrapper{
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+.Button{
+    position: relative;
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(1.02);
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(240, 57, 57);
+    border-radius: 40px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+.Button::after,
+.Button::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 3px;
+    width: 2px;
+    background: red;
+    left: 7px
+}
+.Button:active{
+    transform: scale(1.1);
+}
+.Button::after {
+    bottom: 2px;
+    height: 8px
+}
+.Button::before {
+    height: 2px;
+    top: 2px
+}
+.List{
+    position: relative;
+    display: flex;
+    user-select: none;
+    position: absolute;
+    right: -30px;
+    top: 25px;
+    width: 170px;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    border: 2px solid rgb(240, 57, 57);
+    background-color: rgb(240, 57, 57);
+    color: white;
+    border-radius: 10px;
+    font-size: 12px;
+    text-align: start;
+    padding: 5px;
+    line-height: 14px;
+    opacity: 100;
+    transition: opacity 0.2s;
+    z-index: 1000;
+}
+.List::after {
+    position: absolute;
+    content: '';
+    top: -5px;
+    left: 123px;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(240, 57, 57);
+    rotate: 45deg;
+}
+.ListHidden{
+    visibility: hidden;
+    opacity: 0;
+}

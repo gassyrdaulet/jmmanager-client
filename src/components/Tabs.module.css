@@ -1,0 +1,129 @@
+.TabsWrapper{
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    align-items: center;
+    background: lightcyan;
+    border: 1px solid rgb(188, 188, 188);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: white;
+}
+.TabsHeader{
+    align-items: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    /* border-bottom: 1px solid rgb(234, 222, 222); */
+}
+.TabsSlider{
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    align-items: center;
+    width: 85%;
+    flex-direction: row;
+}
+.Refresh{
+    min-width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Placebo{
+    min-width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Refresh1 img{
+    cursor: pointer;
+    height: 36px;
+    width: 36px;
+    user-select: none;
+}
+.Refresh2 img{
+    cursor: pointer;
+    height: 36px;
+    width: 36px;
+    user-select: none;
+    animation: refreshing 0.7s linear;
+}
+.Refresh3 img{
+    cursor: pointer;
+    height: 36px;
+    width: 36px;
+    user-select: none;
+    animation: refreshing2 0.7s linear;
+}
+.Tabs{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 400px;
+}
+.Tab{
+    user-select: none;
+    overflow: hidden;
+    display: flex;
+    min-width: 70px;
+    padding: 0 10px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #5c8ecd;
+    font-size: 16px;
+}
+.Tab:hover{
+    text-decoration: underline;
+}
+.Tabs .isActive {
+    position: relative;
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
+}
+.Tabs .isActive::before{
+    position: absolute;
+    content: "▸";
+    rotate: 90deg;
+    top: 25px;
+    font-size: 25px;
+}
+.TabsContents{
+    padding: 0;
+    width: 100%;
+}
+.TabsContent{
+    padding: 5px;
+    display: block;
+}
+.TabsContentTitle{
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+@keyframes refreshing {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }    
+}
+@keyframes refreshing2 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }    
+}

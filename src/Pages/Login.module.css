@@ -1,0 +1,75 @@
+.Login{
+    margin: 40px auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Title{
+    width: 100%;
+    text-align: start;
+    margin-bottom: 15px;
+    border-bottom: 1px solid lightgray;
+}
+.LoginForm{
+    height: 100%;
+    width: 98%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: white;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    padding: 10px
+}
+.LoginForm h1{
+    user-select: none;
+    font-weight: normal;
+}
+.Error{
+    color: red;
+}
+.LoadingWrapper{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(12, 12, 12, 0.682);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Loading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 15px;
+}
+.LoginFormItem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.LoginForm input{
+    width: 200px;
+    max-width: 200px;
+    min-width: 200px;
+}
+.LoginForm button{
+    margin: 10px 5px 0;
+    width: 70px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}

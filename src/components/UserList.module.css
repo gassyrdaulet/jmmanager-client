@@ -1,0 +1,55 @@
+.UserListWrapper{
+    border: 1px solid lightgray;
+    padding: 5px;
+    height: 200px;
+    width: 300px;
+    overflow-y: auto;
+    user-select: none;
+    border-radius: 10px;
+}
+.UserListWrapper table{
+    border-spacing: 0;
+}
+.UserListWrapper th:nth-child(1){
+    width: 20px;
+    min-width: 20px;
+    max-width: 20px;
+}
+.UserListWrapper td:nth-child(1){
+    text-align: center;
+}
+.UserListWrapper th:nth-child(2){
+    width: 140px;
+}
+.UserListWrapper th:nth-child(3){
+    width: 140px;
+}
+.UserListWrapper tr{
+    width: 97%;
+    padding: 5px;
+    min-width: 300px;
+    white-space: nowrap;
+    border: 1px solid lightgray;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.UserListWrapper td{
+    border: 1px solid lightgray;
+    text-align: start;
+    padding: 3px;
+}
+.UserListWrapper thead tr:hover{
+    background: transparent;
+}
+.UserListWrapper tr:hover{
+    background: rgb(163, 203, 234);
+}
+.UserListWrapper tr:active{
+    background: rgb(113, 150, 179);
+}
+.Selected{
+    background: rgb(133, 162, 184);
+}
+.Normal{
+    background: white;
+}

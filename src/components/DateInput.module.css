@@ -1,0 +1,28 @@
+.DateWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 10px;
+    user-select: none;
+}
+.DateWrapper2{
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+}
+.Date{
+    display: flex;
+    align-items: center;
+    width: 300px;
+}
+.Date input{
+    font-size: 10px;
+    position: relative;
+    z-index: 2;
+}
+.Date img{
+    filter: invert();
+    vertical-align: center;
+    width: 15px;
+    height: 15px;
+}
