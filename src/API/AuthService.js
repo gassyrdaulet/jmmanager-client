@@ -1,8 +1,8 @@
 import axios from "axios";
 
 export default class Auth{
-    static isTestingOnPhone = false
-    static ip = '192.168.241.77'
+    static isTestingOnPhone = true
+    static ip = 'jackmarket.kz'
 
     static async payOff(sum, user, comment) {
       const {data} = await axios.post(('http://'+(Auth.isTestingOnPhone?Auth.ip:'localhost')+':5000/api/auth/payoff'),
