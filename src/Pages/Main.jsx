@@ -185,8 +185,14 @@ export default function Main({ openedTab }) {
   }, []);
   const filteredGoods = useMemo(() => {
     try {
-      const temp = [...prices].filter((price) =>
-        price.NAME.toLowerCase().includes(goodsFilter.props.value.toLowerCase())
+      const temp = [...prices].filter(
+        (price) =>
+          price.NAME.toLowerCase().includes(
+            goodsFilter.props.value.toLowerCase()
+          ) ||
+          (price.ID + "")
+            .toLowerCase()
+            .includes(goodsFilter.props.value.toLowerCase())
       );
       return temp;
     } catch (e) {
